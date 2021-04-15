@@ -26,11 +26,11 @@
 
   <exec_depend>rosbag2_storage_default_plugins_future</exec_depend>
 
-  <test_depend>ament_cmake_gmock</test_depend>
+  <!-- <test_depend>ament_cmake_gmock</test_depend>
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
   <test_depend>test_msgs</test_depend>
-  <test_depend>rosbag2_test_common_future</test_depend>
+  <test_depend>rosbag2_test_common_future</test_depend> -->
 
   <export>
     <build_type>ament_cmake</build_type>
