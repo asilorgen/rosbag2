@@ -6,6 +6,7 @@
   <description>Python API for rosbag2</description>
   <maintainer email="karsten@openrobotics.org">Karsten Knese</maintainer>
   <maintainer email="michael.jeronimo@openrobotics.org">Michael Jeronimo</maintainer>
+  <maintainer email="me@emersonknapp.com">Emerson Knapp</maintainer>
   <maintainer email="ros-tooling@googlegroups.com">ROS Tooling Working Group</maintainer>
   <license>Apache License 2.0</license>
   <author email="mabel@openrobotics.org">Mabel Zhang</author>
@@ -19,6 +20,7 @@
   <depend>rosbag2_compression_future</depend>
   <depend>rosbag2_cpp_future</depend>
   <depend>rosbag2_storage_future</depend>
+  <depend>rosbag2_transport_future</depend>
 
   <exec_depend>rpyutils</exec_depend>
 
