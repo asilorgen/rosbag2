@@ -22,8 +22,8 @@ endif()
 
 find_package(ament_cmake REQUIRED)
 find_package(pluginlib REQUIRED)
-find_package(rcpputils REQUIRED)
-find_package(rcutils REQUIRED)
+find_package(rcpputils_future REQUIRED)
+find_package(rcutils_future REQUIRED)
 find_package(rosbag2_cpp_future)
 find_package(rosbag2_storage_future REQUIRED)
 
@@ -39,8 +39,8 @@ target_include_directories(${PROJECT_NAME}
   $<INSTALL_INTERFACE:include>)
 ament_target_dependencies(${PROJECT_NAME}
   pluginlib
-  rcpputils
-  rcutils
+  rcpputils_future
+  rcutils_future
   rosbag2_cpp_future
   rosbag2_storage_future)
 target_compile_definitions(${PROJECT_NAME} PRIVATE ROSBAG2_COMPRESSION_BUILDING_DLL)
@@ -62,7 +62,7 @@ install(
 ament_export_include_directories(include)
 ament_export_libraries(${PROJECT_NAME})
 ament_export_targets(export_${PROJECT_NAME})
-ament_export_dependencies(pluginlib rcpputils rcutils rosbag2_cpp_future rosbag2_storage_future)
+ament_export_dependencies(pluginlib rcpputils_future rcutils_future rosbag2_cpp_future rosbag2_storage_future)
 
 if(BUILD_TESTING)
   find_package(ament_cmake_gmock REQUIRED)

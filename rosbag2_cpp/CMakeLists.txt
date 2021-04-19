@@ -39,8 +39,8 @@ find_package(ament_cmake REQUIRED)
 find_package(ament_index_cpp REQUIRED)
 find_package(pluginlib REQUIRED)
 find_package(rclcpp REQUIRED)
-find_package(rcpputils REQUIRED)
-find_package(rcutils REQUIRED)
+find_package(rcpputils_future REQUIRED)
+find_package(rcutils_future REQUIRED)
 find_package(rmw REQUIRED)
 find_package(rmw_implementation REQUIRED)
 find_package(rosbag2_storage_future REQUIRED)
@@ -71,8 +71,8 @@ ament_target_dependencies(${PROJECT_NAME}
   ament_index_cpp
   pluginlib
   rclcpp
-  rcpputils
-  rcutils
+  rcpputils_future
+  rcutils_future
   rmw
   rmw_implementation
   rosbag2_storage_future

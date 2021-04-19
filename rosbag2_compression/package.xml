@@ -12,8 +12,8 @@
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
-  <depend>rcpputils</depend>
-  <depend>rcutils</depend>
+  <depend>rcpputils_future</depend>
+  <depend>rcutils_future</depend>
   <depend>rosbag2_cpp_future</depend>
   <depend>rosbag2_storage_future</depend>
 

@@ -14,8 +14,8 @@
   <depend>ament_index_cpp</depend>
   <depend>pluginlib</depend>
   <depend>rclcpp</depend>
-  <depend>rcutils</depend>
-  <depend>rcpputils</depend>
+  <depend>rcutils_future</depend>
+  <depend>rcpputils_future</depend>
   <depend>rmw</depend>
   <depend>rmw_implementation</depend>
   <depend>rosbag2_storage_future</depend>
