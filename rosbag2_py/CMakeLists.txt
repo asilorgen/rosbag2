@@ -111,10 +111,10 @@ pybind11_add_module(_transport SHARED
   src/rosbag2_py/_transport.cpp
 )
 ament_target_dependencies(_transport PUBLIC
-  "rosbag2_compression"
-  "rosbag2_cpp"
-  "rosbag2_storage"
-  "rosbag2_transport"
+  "rosbag2_compression_future"
+  "rosbag2_cpp_future"
+  "rosbag2_storage_future"
+  "rosbag2_transport_future"
 )
 clean_windows_flags(_transport)
 
@@ -122,8 +122,8 @@ pybind11_add_module(_reindexer SHARED
   src/rosbag2_py/_reindexer.cpp
 )
 ament_target_dependencies(_reindexer PUBLIC
-  "rosbag2_cpp"
-  "rosbag2_storage"
+  "rosbag2_cpp_future"
+  "rosbag2_storage_future"
 )
 clean_windows_flags(_reindexer)
 

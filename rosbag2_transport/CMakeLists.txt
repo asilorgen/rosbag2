@@ -56,22 +56,23 @@ ament_target_dependencies(${PROJECT_NAME}
   yaml_cpp_vendor
 )
 
-include(cmake/configure_python.cmake)
-ament_python_install_package(rosbag2_transport)
-add_library(rosbag2_transport_py
-  SHARED
-  src/rosbag2_transport/rosbag2_transport_python.cpp)
-target_include_directories(rosbag2_transport_py PUBLIC
-  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-  $<INSTALL_INTERFACE:include>)
-configure_python_c_extension_library(rosbag2_transport_py)
-target_link_libraries(rosbag2_transport_py rosbag2_transport_future)
-ament_target_dependencies(rosbag2_transport_py
-  rosbag2_compression_future
-  rosbag2_cpp_future
-  rosbag2_storage_future
-  rmw
-)
+# include(cmake/configure_python.cmake)
+# ament_python_install_package(rosbag2_transport)
+# add_library(rosbag2_transport_py
+#   SHARED
+#   src/rosbag2_transport/rosbag2_transport_python.cpp)
+# target_include_directories(rosbag2_transport_py PUBLIC
+#   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+#   $<INSTALL_INTERFACE:include>)
+# configure_python_c_extension_library(rosbag2_transport_py)
+# target_link_libraries(rosbag2_transport_py rosbag2_transport_future)
+# ament_target_dependencies(rosbag2_transport_py
+#   rosbag2_compression_future
+#   rosbag2_cpp_future
+#   rosbag2_storage_future
+#   rmw
+# )
+
 # Causes the visibility macros to use dllexport rather than dllimport,
 # which is appropriate when building the dll but not consuming it.
 target_compile_definitions(${PROJECT_NAME} PRIVATE "ROSBAG2_TRANSPORT_BUILDING_LIBRARY")
